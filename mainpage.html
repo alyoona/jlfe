@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+          rel="stylesheet">
+
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!--my custom styles:-->
+    <link rel="stylesheet" href="css/mainpage.css">
+
+    <title>MainPage</title>
+</head>
+<body>
+
+<header class="header">
+    <nav class="menu">
+        <img src="#" alt="The JLand logo" class="logo">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link menu__link--active">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Apply for presentation</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Participants</a></li>
+        </ul>
+        <form action="#" method="post" class="button-form">
+            <button class="button-form__button">
+                <p class="button-form__title">Logout</p>
+                <i class="fas fa-sign-out-alt button-form__logout-icon--size"></i>
+            </button>
+        </form>
+    </nav>
+</header>
+
+<section class="date-place">
+    <div class="welcome-info">Some welcome information, what Java Community is and for whom...</div>
+    <div class="date-place__item">
+        <p class="date-place__info">The next Java Community is going to be</p>
+    </div>
+    <div class="date-place__item">
+        <p class="date-and-place__when">13.10.2018</p>
+        <p class="date-and-place__where">Andrey Fabra Str., 2 (International House)
+            <a href="#" class="date-and-place__link" title="Map link">
+                <i class="fas fa-map-marker-alt date-and-place__map-icon--size"></i>
+            </a>
+        </p>
+    </div>
+    <div class="user">
+        <img src="img/users/siamang.jpg" alt="User avatar" class="user__avatar">
+        <p class="user__name">Siamang</p>
+        <form action="#" method="post" class="button-form">
+            <button class="button-form__button">
+                <i class="fas fa-toggle-off button-form__re-unregister-icon--size" title="Click to register"></i>
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="agenda">
+    <h3 class="agenda__header">Agenda
+        <a href="#" class="agenda__dropdown"><i class="fas fa-scroll agenda__icon--size" title="Agenda details"></i></a>
+    </h3>
+    <ul class="agenda__list">
+        <li class="agenda__item agenda__item--a-break">
+            <p class="agenda__time" contenteditable="true">11:30 - 12:00</p>
+            <p class="agenda__title agenda__title--break" contenteditable="true">Welcome Coffee</p>
+        </li>
+        <li class="agenda__item agenda__item--a-presentation">
+            <p class="agenda__time" contenteditable="true">12:00 - 13:00</p>
+            <div class="presentation">
+                <p class="presentation__name">Presentation name</p>
+                <p class="presentation__presenter">@Presenter name</p>
+                <a href="#" class="presentation__dropdown">
+                    <i class="fas fa-scroll presentation__icon--size" title="Presentation plan"></i>
+                </a>
+            </div>
+            <ul class="presentation__plan">
+                <li class="presentation__item">Motivation</li>
+                <li class="presentation__item">Overview</li>
+                <li class="presentation__item">RxJava Instruments</li>
+                <li class="presentation__item">Observable</li>
+                <li class="presentation__item">Operators</li>
+                <li class="presentation__item">Single</li>
+                <li class="presentation__item">Subject</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<footer class="footer">
+    <p class="footer__item"><i class="far fa-copyright"></i>2018 JLand. Copyright notice</p>
+    <button onclick="backToUpFunction()" id="backToUpButton" title="Back to up" class="button-to-top">
+        <i class="fas fa-angle-up button-to-top__icon-size"></i>
+        <p class="button-to-top__title">Back to up</p>
+    </button>
+</footer>
+
+
+</body>
+</html>
