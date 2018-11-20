@@ -1,0 +1,47 @@
+/*navigation styles start here*/
+
+.header {
+    text-align: center;
+    position: sticky;
+    width: 100%;
+}
+
+.nav-bar {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+}
+
+.nav-bar .menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-bar .menu__item {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.nav-bar .menu__link {
+    color: rgba(1, 36, 45, 1);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav-bar .menu__link--active {
+    color: white;
+}
+
+.nav-bar .menu__link:hover {
+    color: white;
+}
+
+.nav-bar .menu__link--active:hover {
+    color: rgba(1, 36, 45, 1);
+}
+
