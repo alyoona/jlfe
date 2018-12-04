@@ -20,7 +20,7 @@ body {
     /*agenda*/
     --agenda-background: rgba(0, 0, 0, .15);
     /*footer*/
-    --background-footer: rgba(53, 58, 64, 0.96);
+    --background-footer: black ;/*rgba(53, 58, 64, 0.96);*/
 
     /*button-icon*/
     --button-color: rgba(0, 104, 255, 0.08);
@@ -30,7 +30,7 @@ body {
 
 
     --background-toggle: rgba(69, 164, 227, 0.26);
-    --header-background: rgba(52, 52, 52, 0.71);
+    --header-background: black; /*rgba(52, 52, 52, 0.71);*/
 
 
     --color-font-dark: rgba(0, 18, 41, 1);
@@ -118,7 +118,7 @@ position: relative;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--header-footer-logo-color);
+    color: white;
 }
 
 .logo__letter--plaster {
@@ -130,21 +130,21 @@ position: relative;
     grid-row: 1;
     padding-right: 45px;
     font-size: 60px;
-    color: rgba(255, 110, 0, .9);
+    color: rgba(255, 110, 0, 1);
 }
 .logo__letter--l {
     grid-column: 1;
     grid-row: 1;
     padding-left: 45px;
     font-size: 60px;
-    color: rgba(0, 0, 0, .9);
+    /*color: rgba(0, 0, 0, .9);*/
 }
 .logo__letter--amp {
     grid-column: 1;
     grid-row: 1;
     padding-left: 75px;
     font-size: 40px;
-    color:  rgba(0, 0, 0, .9);
+   /* color:  rgba(0, 0, 0, .9);*/
 }
 
 .header .nav-toggle__label {
@@ -173,6 +173,16 @@ position: relative;
     list-style: none;
 }
 
+i {
+    font-size: 35px;
+    color: white;
+    opacity: 1;
+}
+
+i:active {
+    opacity: 1;
+}
+
 .logout__button, .register__button {
     display: flex;
     justify-content: space-between;
@@ -183,7 +193,7 @@ position: relative;
     text-decoration: none;
 
     text-transform: uppercase;
-    color: var(--button-color);
+    color: white; /*var(--button-color);*/
     font-size: 35px;
     opacity: 0.5;
 
@@ -578,15 +588,7 @@ button:focus {
     opacity: .5;
 }
 
-i {
-    font-size: 35px;
-    color: black;
-    opacity: 0.5;
-}
 
-i:active {
-    opacity: 1;
-}
 
 /*Agenda*/
 .agenda {
