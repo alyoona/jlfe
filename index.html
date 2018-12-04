@@ -9,7 +9,7 @@
     <!--font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
           rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
     <!--font awesome icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -37,20 +37,26 @@
             </button>
         </form>
     </nav>
-    <img src="img/7.png" alt="The JLand logo" class="logo">
+    <!--img src="img/7.png" alt="The JLand logo" class="logo"-->
+    <div class="logo ">
+        <p class="logo__letter logo__letter--j logo__letter--plaster">j</p>
+        <p class="logo__letter logo__letter--l logo__letter--plaster">l</p>
+        <p class="logo__letter logo__letter--amp logo--decoration">&</p>
+    </div>
+
     <label for="nav-toggle-input" class="nav-toggle__label">
         <i class="fas fa-bars nav-toggle-label__icon"></i>
     </label>
 </header>
 
-<section class="date-place">
-    <div class="welcome-info">
-        Some welcome information, what Java Community is and for whom...
+<section class="date-place ">
+    <div class="welcome-info welcome-info--decoration">
+        <h1>Some welcome information, what Java Community is and for whom...</h1>
     </div>
 
-    <div class="date-place__info">Next Java Community</div>
+    <div class="date-place__info date-place__info--decoration">Next Java Community</div>
 
-    <div class="date-place__item">
+    <div class="date-place__item date-place__item--decoration">
         <div class="date-and-place__when">13.10.2018</div>
         <div class="date-and-place__where">Andrey Fabra Str., 2 (International House)
             <a href="#" class="date-and-place__link" title="Map link">
@@ -58,9 +64,9 @@
             </a>
         </div>
     </div>
-    <div class="user">
+    <div class="user user--decoration">
         <div class="user__grid">
-            <img src="img/users/siamang.jpg" alt="User avatar" class="user__avatar">
+            <img src="https://bit.ly/2KRYNb8" alt="User avatar" class="user__avatar user__avatar--resize">
             <div class="user__name">User Name</div>
             <form action="#" method="post" class="register">
                 <button class="register__button register__button--not register__button--inactive">
@@ -146,6 +152,6 @@
 
 
 <!--scripts-->
-<script src="js/main.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
