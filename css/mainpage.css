@@ -108,7 +108,7 @@ position: relative;
     height: 80%;
     width: 75%;
     border-radius: 100% 50%;
-    box-shadow: 10px -5px 25px 1px rgba(255, 110, 0, 0.9);
+    box-shadow: 10px -5px 25px 1px rgba(255, 0, 0, 0.9);
     transform: translateX(-50px) translateY(10px) skewY(-10deg);
     z-index: -1;
 }
@@ -130,7 +130,7 @@ position: relative;
     grid-row: 1;
     padding-right: 45px;
     font-size: 60px;
-    color: rgba(255, 110, 0, 1);
+    color: rgba(255, 0, 0, 1);
 }
 .logo__letter--l {
     grid-column: 1;
@@ -385,7 +385,7 @@ button:focus {
     background: rgba(0, 0, 0, 0.1);
     box-shadow:
             10px -5px 0px -5px rgba(0, 0, 0, 0.9),
-            -10px 5px 0px -5px rgba(255, 110, 0, .9)     ;
+            -10px 5px 0px -5px rgba(255, 0, 0, .9)     ;
 }
 
 .welcome-info--decoration::before, .welcome-info--decoration::after {
@@ -409,8 +409,8 @@ button:focus {
     left: 0;
     top: 0;
     z-index: 2;
-    border-right: 1px solid rgba(255, 110, 0, 1);
-    border-bottom: 1px solid rgba(255, 110, 0, 1);
+    border-right: 1px solid rgba(255, 0, 0, 1);
+    border-bottom: 1px solid rgba(255, 0, 0, 1);
     border-radius: 0 75px 75px 75px;
     transform: translateX(10px) translateY(-5px);
 }
@@ -506,7 +506,7 @@ button:focus {
     background-color: rgba(0, 0, 0, .075);
     width: 133%;
     z-index: -2;
-    border-right: 1px solid rgba(255, 110, 0, 1);
+    border-right: 1px solid rgba(255, 0, 0, 1);
 }
 
 .user--decoration:after {
@@ -601,11 +601,11 @@ button:focus {
 }
 
 .agenda__header {
-    color: rgba(255, 110, 0, 1);;
+    color: rgba(255, 0, 0, 1);;
     text-decoration: none;
     text-transform: uppercase;
 
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .9);
     box-shadow: 15px 0 0 0 rgba(0, 0, 0, .075),
     -15px 0 0 0 rgba(0, 0, 0, .075),
     30px 0 0 0 rgba(0, 0, 0, .075),
@@ -639,7 +639,8 @@ button:focus {
 }
 
 .agenda__header:hover {
-    background: rgba(255, 110, 0, .5);
+    background: rgba(255, 0, 0, .9);
+    color: rgba(0, 0, 0, 1);;
 }
 
 p {
@@ -686,7 +687,7 @@ p {
 }
 
 .agenda__list > .agenda__item:nth-child(2n+2):hover {
-    background: rgba(255, 110, 0, .5);
+    background: rgba(255, 0, 0, .9);
 }
 
 .agenda__list > .agenda__item:nth-child(2n+1) {
@@ -696,7 +697,7 @@ p {
 }
 
 .agenda__list > .agenda__item:nth-child(2n+1):hover {
-    background: rgba(255, 110, 0, .5);
+    background: rgba(255, 0, 0, .9);
 }
 
 .agenda__item-time {
