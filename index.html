@@ -33,7 +33,7 @@
         <form action="#" method="post" class="logout">
             <!--div class="logout__title">Logout</div-->
             <button class="logout__button" title="Logout">
-                <i class="fas fa-sign-out-alt logout__icon--size"></i>
+                <i class="fas fa-sign-out-alt logout__icon"></i>
             </button>
         </form>
     </nav>
@@ -54,15 +54,21 @@
         <h1>Some welcome information, what Java Community is and for whom...</h1>
     </div>
 
-    <div class="date-place__info date-place__info--decoration">Next Java Community</div>
+    <div class="date-place__board">
+        <img src="img/whiteboard.png" alt="">
+    </div>
 
-    <div class="date-place__item date-place__item--decoration">
-        <div class="date-and-place__when">13.10.2018</div>
-        <div class="date-and-place__where">Andrey Fabra Str., 2 (International House)
-            <a href="#" class="date-and-place__link" title="Map link">
-                <i class="fas fa-map-marker-alt date-and-place__map-icon--size"></i>
-            </a>
+    <div class="date-place__item ">
+        <div class="date-place__item--grid">
+            <div class="date-place__info">Next Java Community is going to be:</div>
+            <div class="date-and-place__when">13.10.2018</div>
+            <div class="date-and-place__where">Andrey Fabra Str., 2 (International House)
+                <a href="#" class="date-and-place__link" title="Map link">
+                    <i class="fas fa-map-marker-alt date-and-place__map-icon--size"></i>
+                </a>
+            </div>
         </div>
+
     </div>
     <div class="user user--decoration">
         <div class="user__grid">
@@ -73,7 +79,7 @@
 
                     <div class="register__icon--not">
                         <i class="fas fa-door-open"></i>
-                        <i class="fas fa-walking register__icon--mirror"></i>
+                        <i class="fas fa-walking  register__icon--mirror"></i>
                     </div>
                     <div class="register__button--text">No</div>
                 </button>
@@ -92,23 +98,23 @@
 
 <section class="agenda">
 
-    <div class="agenda__header ">
-        <h1 class="agenda__header--title">Agenda</h1>
+    <div class="agenda__header agenda__header--decoration">
+        <h1 class="agenda__header--title ">Agenda</h1>
         <div class="agenda__dropdown" id="dropdownForAgenda">
-            <i class="fas fa-scroll agenda__icon--size" title="Agenda details"></i>
+            <i class="fas fa-scroll agenda__icon" title="Agenda details"></i>
         </div>
     </div>
 
     <ul class="agenda__list" id="agendaList">
-        <li class="agenda__item">
+        <li class="agenda__item welcome-info--decoration">
             <p class="agenda__item-time" contenteditable="true">11:30 - 12:00</p>
-
+            <img src="img/coffee.png" class="agenda__item--img-coffee">
             <div class="agenda__item-title ">
                 <div class="agenda__item-title--coffe">Welcome Coffee</div>
             </div>
         </li>
 
-        <li class="agenda__item agenda__item--presentation-hover">
+        <li class="agenda__item welcome-info--decoration agenda__item--presentation-hover ">
             <p class="agenda__item-time" contenteditable="true">12:00 - 13:00</p>
 
             <div class="agenda__item-title">
@@ -117,7 +123,7 @@
                     <p class="presentation__presenter">@Presenter name</p>
 
                     <div class="presentation__dropdown" id="dropdownForPresentationName">
-                        <i class="fas fa-scroll presentation__icon--size"></i>
+                        <i class="fas fa-scroll presentation__icon"></i>
                     </div>
                     <div class="presentation__plan" id="presentationPlanForPresentationName">
                         <ul class="presentation__list">
@@ -147,7 +153,7 @@
 </footer>
 
 <button id="goUpButton" title="Back to up" class="button-go-up">
-    <i class="fas fa-angle-up button-go-up__icon-size"></i>
+    <i class="fas fa-angle-up button-go-up__icon"></i>
 </button>
 
 
