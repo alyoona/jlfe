@@ -28,7 +28,7 @@
             <li class="menu__item"><a href="#" class="menu__link menu__link--active ">Home</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Apply for presentation</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Participants</a></li>
-            <!--li-- class="menu__item"><a href="#" class="menu__link">All Requests</a></li-->
+            <li class="menu__item"><a href="#" class="menu__link">All Requests</a></li>
         </ul>
         <form action="#" method="post" class="logout">
             <!--div class="logout__title">Logout</div-->
@@ -55,7 +55,7 @@
     </div>
 
     <div class="date-place__board">
-        <img src="img/whiteboard.png" alt="">
+        <img src="img/whiteboard.png" alt="" class="date-place__board--size">
     </div>
 
     <div class="date-place__item ">
@@ -70,8 +70,8 @@
         </div>
 
     </div>
-    <div class="user user--decoration">
-        <div class="user__grid">
+    <div class="user ">
+        <div class="user__grid user--decoration">
             <img src="https://bit.ly/2KRYNb8" alt="User avatar" class="user__avatar user__avatar--resize">
             <div class="user__name">User Name</div>
             <form action="#" method="post" class="register">
@@ -85,7 +85,7 @@
                 </button>
                 <button class="register__button register__button--go register__button--active">
                     <div class="register__button--text">Go</div>
-                    <div class="register__icon--go ">
+                    <div class="register__icon--go">
                         <i class="fas fa-walking register__icon--active"></i>
                         <i class="fas fa-door-open register__icon--mirror register__icon--active"></i>
                     </div>
@@ -108,39 +108,39 @@
     <ul class="agenda__list" id="agendaList">
         <li class="agenda__item welcome-info--decoration">
             <p class="agenda__item-time" contenteditable="true">11:30 - 12:00</p>
-            <img src="img/coffee.png" class="agenda__item--img-coffee">
+
+                <img src="img/coffee.png" class="agenda__item--img-coffee">
+
             <div class="agenda__item-title ">
                 <div class="agenda__item-title--coffe">Welcome Coffee</div>
             </div>
         </li>
 
-        <li class="agenda__item welcome-info--decoration agenda__item--presentation-hover ">
+        <li class="agenda__item welcome-info--decoration agenda__item--presentation-hover">
             <p class="agenda__item-time" contenteditable="true">12:00 - 13:00</p>
 
             <div class="agenda__item-title">
-                <div class="presentation">
-                    <p class="presentation__name">Presentation name</p>
-                    <p class="presentation__presenter">@Presenter name</p>
+                <p class="presentation__name">Presentation name</p>
+                <p class="presentation__presenter">@Presenter name</p>
+            </div>
 
-                    <div class="presentation__dropdown" id="dropdownForPresentationName">
-                        <i class="fas fa-scroll presentation__icon"></i>
-                    </div>
-                    <div class="presentation__plan" id="presentationPlanForPresentationName">
-                        <ul class="presentation__list">
-                            <li class="presentation__item">Motivation Motivation Motivation Motivation Motivation
-                                Motivation Motivation Motivation Motivation
-                            </li>
-                            <li class="presentation__item">Overview</li>
-                            <li class="presentation__item">RxJava Instruments</li>
-                            <li class="presentation__item">Observable</li>
-                            <li class="presentation__item">Operators</li>
-                            <li class="presentation__item">Single</li>
-                            <li class="presentation__item">Subject</li>
-                            <!-- <li class="presentation__item presentation__item&#45;&#45;increment"></li>-->
-                        </ul>
-                    </div>
-                </div>
+            <div class="presentation__dropdown" id="dropdownForPresentationName">
+                <i class="fas fa-scroll presentation__icon"></i>
+            </div>
 
+            <div class="presentation__plan" id="presentationPlanForPresentationName">
+                <ul class="presentation__list">
+                    <li class="presentation__item">Motivation Motivation Motivation Motivation Motivation
+                        Motivation Motivation Motivation Motivation
+                    </li>
+                    <li class="presentation__item">Overview</li>
+                    <li class="presentation__item">RxJava Instruments</li>
+                    <li class="presentation__item">Observable</li>
+                    <li class="presentation__item">Operators</li>
+                    <li class="presentation__item">Single</li>
+                    <li class="presentation__item">Subject</li>
+                    <!-- <li class="presentation__item presentation__item&#45;&#45;increment"></li>-->
+                </ul>
             </div>
 
         </li>

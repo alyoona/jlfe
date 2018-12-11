@@ -25,23 +25,6 @@ function openAgenda() {
   document.getElementById("agendaList").classList.toggle("active");
 }
 
-function vowelsAndConsonants(s) {
-  var vowels = ['a', 'e', 'i', 'o', 'u'];
-
-  for (var i = 0; i < s.length; i++) {
-    if (vowels.includes(s[i])) {
-      console.log(s[i]);
-    }
-  }
-  for (var i = 0; i < s.length; i++) {
-    if (!vowels.includes(s[i])) {
-      console.log(s[i]);
-    }
-  }
-}
-
-console.log(vowelsAndConsonants("javascriptloops"));
-
 
 
 
