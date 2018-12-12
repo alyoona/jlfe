@@ -77,7 +77,7 @@ button:focus {
 .main-grid {
     display: grid;
     /*grid-template-areas: ". . ." ". d ." ". a ." "f f f";*/
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 1fr minmax(50%, 1500px) 1fr;
     grid-template-rows: 75px auto;
     grid-gap: 30px;
 }
@@ -269,7 +269,7 @@ button:focus {
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr 70% 1fr 1fr;
+    grid-template-columns: 1fr minmax(50%, 800px) 1fr 1fr;
     grid-template-rows: minmax(75px, 1fr);
     grid-gap: 40px;
 }
@@ -396,23 +396,23 @@ h1 {
 @media screen and (max-width: 1140px) {
 
     .main-grid {
-        grid-template-columns: 3% 1fr 3%;
+        grid-template-columns: 1fr 95% 1fr;
     }
 
     .date-place {
-        grid-template-columns: 70% 1fr;
+        grid-template-columns: 1fr 65% 1fr 1fr;
         grid-template-rows: minmax(75px, 1fr);
         grid-gap: 30px;
     }
 
     .date-place__board {
         grid-row: 2;
-        grid-column: 1;
+        grid-column: 2;
     }
 
     .date-place__item {
         grid-row: 2;
-        grid-column: 1;
+        grid-column: 2;
         text-decoration: none;
         font-style: italic;
         font-weight: bold;
@@ -421,8 +421,7 @@ h1 {
 
     .user {
         grid-row: 2;
-        grid-column: 2;
-
+        grid-column: 3;
     }
 
 }
@@ -1000,7 +999,7 @@ Agenda
         grid-column: 1;
         grid-row: 2;
 
-        grid-template-columns: 1px 65% 1fr 1px;
+        grid-template-columns: 1fr 65% 1fr 1fr;
         grid-template-rows: minmax(75px, 1fr);
         grid-gap: 30px;
     }
@@ -1035,28 +1034,28 @@ Agenda
 }
 
 
-@media screen and (max-width: 793px) {
+@media screen and (max-width: 959px) {
     .main-grid {
         display: grid;
         /*grid-template-areas: ". . ." ". d ." ". a ." "f f f";*/
-        grid-template-columns: 1fr;
+        grid-template-columns:  1fr 90% 1fr;
         grid-template-rows: 75px auto;
         grid-gap: 20px;
     }
 
     .date-place {
         /*grid-area: d;*/
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 2;
         display: grid;
-        grid-template-columns: 1px 1fr 1px;
+        grid-template-columns: 1fr 80% 1fr;
         grid-template-rows: minmax(75px, 1fr);
         grid-gap: 20px;
     }
 
     .welcome-info {
         grid-row: 1;
-        grid-column: 2;
+        grid-column: 1/-1;
         text-align: center;
         margin: 0 10px 0 10px;
     }
@@ -1109,7 +1108,7 @@ Agenda
     }
 
     .agenda {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 3;
 
         grid-template-columns: 5% 5% 1fr 5% 5%;
@@ -1148,6 +1147,25 @@ Agenda
 
    .agenda__item--grid-presentation {
         display: grid;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .date-place__board {
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+
+    .date-place__board--size {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .date-place__item > div {
+        grid-row: 2;
+        grid-column: 1/-1;
 
     }
 }
