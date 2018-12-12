@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: black;
 }
 
 :root {
@@ -41,6 +41,9 @@ body {
     grid-gap: 25px;
     grid-template-columns: 150px 150px 1fr;
     align-items: center;
+
+    position: relative;
+    transform: translateY(1.5px);
 }
 
 .title {
@@ -60,17 +63,18 @@ body {
     position: relative;
     padding: 15px;
 
+    border: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .title {
-    background: black;
+    background: white;
 }
 
 .sign-up {
-    background: grey;
 }
 
-.title::before, .sign-up:before {
+/*.title::before, .sign-up:before {
     content: '';
     display: block;
     position: absolute;
@@ -86,8 +90,9 @@ body {
     border-bottom: 51.5px solid grey;
     border-left: 0 solid grey;
 }
-
+*/
 .sign-up, .sign-up:before {
+
     display: none;
 }
 
@@ -95,18 +100,20 @@ form {
     grid-column: 2;
     grid-row: 2;
 
-    background: black;
+    background: transparent;
 
-    box-shadow: 5px 5px 25px 0 black;
+    box-shadow: 5px 5px 5px 0 black;
 
     border-radius: 0px 10px 10px 10px;
-
+    border: 1px solid black;
     display: grid;
     grid-template-columns: 50px 1fr 1fr 50px;
     align-items: center;
 
     grid-gap: 40px;
     padding: 50px 0;
+
+
 }
 
 .usernameBox {
@@ -153,7 +160,7 @@ form .inputBox input {
     padding: 10px 0 10px 0;
 
     font-size: 16px;
-    color: #fff;
+    color: black;
 
     border-radius: 5px;
     border: none;
@@ -168,7 +175,7 @@ form .inputBox label {
     left:0;
     padding: 10px 0 ;
     font-size: 16px;
-    color: #fff;
+    color: black;
     pointer-events: none;
     transition: .5s;
 }
@@ -196,17 +203,19 @@ input:-webkit-autofill {
 {
     padding: 10px 15px 11px ;
     font-size: 18px ;
-    background-color: #fff;
+    background-color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Open Sans", "Arial", sans-serif;
-    color: black;
+    color: white;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid black;
     cursor: pointer;
-    box-shadow:
-    inset 0px 0px 10px 0 rgba(0, 0, 0, 0.7);
+    /*box-shadow:
+            !*inset 0px 0px 0px 1px rgba(255, 255,255, 0.1),*!
+    inset 0px 0px 5px 2px rgba(255, 255,255, 0.7)
+    ;*/
 }
 
 
@@ -246,7 +255,7 @@ input:-webkit-autofill {
     left: .01em;
     font-size: 2em;
     line-height: 0;
-    color: #fff;
+    color: black;
     transition: all .2s;
     font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
 }
