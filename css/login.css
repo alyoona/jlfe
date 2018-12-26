@@ -97,21 +97,19 @@ form {
     padding: 50px 0;
 }
 
-@media (max-width: 636px){
+@media (max-width: 636px) {
     form {
         grid-template-columns: 1% 1fr 1fr 1%;
         grid-gap: 30px;
     }
 }
 
-
-
 .usernameBox {
     grid-column: 2/ span 2;
     grid-row: 1;
     border-bottom: 1px solid grey;
     margin-top: 10px;
-    }
+}
 
 .passwordBox {
     grid-column: 2/ span 2;
@@ -132,15 +130,12 @@ form {
     justify-self: end;
 }
 
-
-
 button {
     grid-column: 2/ span 2;
     grid-row: 4;
     color: black;
 
 }
-
 
 @media (max-width: 360px) {
     .forgot-password-link {
@@ -172,9 +167,9 @@ form .inputBox input {
 
 form .inputBox label {
     position: absolute;
-    top:0;
-    left:0;
-    padding: 10px 0 ;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
     font-size: 16px;
     color: black;
     pointer-events: none;
@@ -184,7 +179,7 @@ form .inputBox label {
 form .inputBox input:focus ~ label,
 form .inputBox input:valid ~ label {
     top: -30px;
-    left:0;
+    left: 0;
     color: #bfbfbf;
     font-size: 14px;
 }
@@ -200,10 +195,9 @@ input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
 
-.login__button
-{
-    padding: 10px 15px 11px ;
-    font-size: 18px ;
+.login__button {
+    padding: 10px 15px 11px;
+    font-size: 18px;
     background-color: black;
     text-decoration: none;
     text-transform: uppercase;
@@ -215,13 +209,13 @@ input:-webkit-autofill {
     cursor: pointer;
 }
 
-
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
     position: absolute;
     left: -9999px;
 }
+
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
     position: relative;
@@ -234,14 +228,15 @@ input:-webkit-autofill {
 [type="checkbox"]:checked + label:before {
     content: '';
     position: absolute;
-    left: 0; top: 0;
-    width: 1.25em; height: 1.25em;
+    left: 0;
+    top: 0;
+    width: 1.25em;
+    height: 1.25em;
     border: 2px solid #ccc;
-   /* background: #fff;*/
+    /* background: #fff;*/
     border-radius: 4px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
 }
-
 
 /* checked mark aspect */
 [type="checkbox"]:not(:checked) + label:after,
@@ -256,15 +251,18 @@ input:-webkit-autofill {
     transition: all .2s;
     font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
 }
+
 /* checked mark aspect changes */
 [type="checkbox"]:not(:checked) + label:after {
     opacity: 0;
     transform: scale(0);
 }
+
 [type="checkbox"]:checked + label:after {
     opacity: 1;
     transform: scale(1);
 }
+
 /* disabled checkbox */
 [type="checkbox"]:disabled:not(:checked) + label:before,
 [type="checkbox"]:disabled:checked + label:before {
@@ -272,17 +270,18 @@ input:-webkit-autofill {
     border-color: #bbb;
     background-color: #ddd;
 }
+
 [type="checkbox"]:disabled:checked + label:after {
     color: #999;
 }
+
 [type="checkbox"]:disabled + label {
     color: #aaa;
 }
 
-
 /* hover style just for information */
 label:hover:before {
-    border: 2px solid grey!important;
+    border: 2px solid grey !important;
 }
 
 

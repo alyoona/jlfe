@@ -14,7 +14,6 @@ goUpButton.onclick = function () {
 }
 
 
-
 document.getElementById("dropdownForPresentationName").addEventListener("click", openPresentationPlan);
 function openPresentationPlan() {
   document.getElementById("presentationPlanForPresentationName").classList.toggle("active");
