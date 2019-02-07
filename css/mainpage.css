@@ -251,7 +251,7 @@ button:focus {
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr minmax(50%, 800px) 1fr 1fr;
+    grid-template-columns: minmax(200px, 1fr) minmax(650px, 800px) minmax(200px, 1fr);
     grid-template-rows: minmax(75px, 1fr);
     grid-gap: 40px;
 }
@@ -359,15 +359,16 @@ h1 {
 .user {
     grid-row: 2;
     grid-column: 3;
+    justify-self: start;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
     .main-grid {
         grid-template-columns: 1fr 95% 1fr;
     }
 
     .date-place {
-        grid-template-columns: 1fr 65% 1fr 1fr;
+        grid-template-columns: 1fr 65% 1fr;
         grid-template-rows: minmax(75px, 1fr);
         grid-gap: 30px;
     }
@@ -387,8 +388,9 @@ h1 {
     }
 
     .user {
-        grid-row: 2;
-        grid-column: 3;
+        grid-row: 3;
+        grid-column: 2;
+        justify-self: center;
     }
 }
 
@@ -455,16 +457,9 @@ h1 {
 
 .register {
     grid-row: 3;
-
     display: grid;
-    grid-template-columns: 80px 110px;
-    grid-template-rows: 1fr;
     border-radius: 25px 25px 25px 25px;
     z-index: 16;
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: inset -5px 5px 10px -1px rgba(0, 0, 0, .2),
-    inset 5px -5px 10px -1px rgba(0, 0, 0, 0.2),
-    0px 0px 25px 0px rgba(0, 0, 0, .3);
 }
 
 .register__button {
@@ -476,27 +471,16 @@ h1 {
     grid-template-rows: 1fr 1fr;
 }
 
-.register__button--not {
-    opacity: 0.5;
-}
-
-.register__button--go {
-    opacity: 0.75;
-}
-
 .register__icon--mirror {
     -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .register__button--active {
-    background: rgba(0, 0, 0, 0.2);;
-    box-shadow: inset -5px 0px 5px 0px rgba(0, 0, 0, .2),
-    inset 5px 0px 5px 0px rgba(255, 255, 255, 0.5),
-    inset 0px -5px 5px 0px rgba(255, 255, 255, 0.5),
-    inset 0px 5px 5px 0px rgba(255, 255, 255, 0.5),
-    -5px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(230, 232, 234);
+    box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, 0.5),
+    inset 0px 0px 15px 10px rgb(255, 255, 255),
+    0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 25px 25px 25px 25px;
-
 }
 
 .register__icon--active {
@@ -504,8 +488,12 @@ h1 {
     color: white;
 }
 
-.register__button--inactive:hover {
-    opacity: .5;
+.register__button--active:hover {
+    opacity: 1;
+    background: rgb(187, 188, 191);
+    box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, 0.5),
+    inset 0px 0px 10px 7px rgb(255, 255, 255),
+    0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 /*=======================
@@ -730,7 +718,7 @@ Agenda
     grid-row: 2;
     margin: 0;
 }
-
+/*Presentation Plan*/
 @media screen and (max-width: 793px) {
     .agenda {
         margin: 0;
@@ -835,7 +823,7 @@ Agenda
     opacity: 1;
 
 }
-
+/*nav bar*/
 @media screen and (min-width: 960px) {
 
     .header .logo {
@@ -916,7 +904,7 @@ Agenda
     }
 }
 
-@media screen and (max-width: 960px) {
+/*@media screen and (max-width: 960px) {
 
     .main-grid {
         grid-template-columns: 1fr;
@@ -957,7 +945,7 @@ Agenda
         grid-row: 2;
         grid-column: 3;;
     }
-}
+}*/
 
 @media screen and (max-width: 959px) {
     .main-grid {
@@ -1028,7 +1016,9 @@ Agenda
         grid-row: 3;
         grid-column: 2;
         margin: 15px 0 0 0;
+        justify-self: center;
     }
+
 
     .agenda {
         grid-column: 2;
@@ -1088,6 +1078,8 @@ Agenda
         grid-row: 2;
         grid-column: 1/-1;
     }
+
+
 }
 
 
