@@ -24,7 +24,6 @@ i {
 }
 
 .participants__count {
-    background-color: ghostwhite;
     display: grid;
     justify-items: center;
 
@@ -52,7 +51,7 @@ i {
     grid-auto-rows: 200px;
 }
 .participants__item {
-    background-color: ghostwhite;
+
     display: grid;
     justify-items: center;
     align-items: center;
@@ -69,5 +68,9 @@ i {
 
 .participants__name {
     text-align: center;
+}
+
+.participants--background {
+    background-color: rgba(0, 0, 0, .01);
 }
 
